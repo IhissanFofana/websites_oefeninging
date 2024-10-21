@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <title>Contact</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #def2f1;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #3aafa9;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #0f0303;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #216f6b;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 3rem;
+            color: #333;
+        }
+
+        hr {
+            height: 2px;
+            background-color: black;
+            margin: 20px 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #009cab;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #216f6b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="hobbys.html">Hobby's</a>
+        <a href="ervaringen.html">Ervaringen</a>
+        <a href="contact.html">Contact</a>
+        <a href="cv.html">CV</a>
+    </div>
+
+    <h1>Contact</h1>
+    <hr>
+    <div>
+        <p>Naam: Ihissan Fofana</p>
+        <p>Email: r1037702@gmail.com</p>
+        <p>GSM-nummer: 0466880952</p>
+    </div>
+    
+   
+    <form action="/submit_form" method="POST">
+        <div>
+            <label for="username">Gebruikersnaam</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div>
+            <label for="password">Wachtwoord</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="message">Reactie</label>
+            <textarea id="message" name="message" cols="40" rows="5" required></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Verstuur">
+        </div>
+    </form>
+
+</body>
+
+</html>
