@@ -139,7 +139,7 @@
       height: 200px;
       width: auto;
     }
-    /* spreek elke img aan voor dezelfde breete en hoogte*/
+    /* spreek elke img aan voor dezelfde breete en hoogte in de carousel*/
 .carousel-inner img {
   height: 500px; 
   object-fit: cover; 
