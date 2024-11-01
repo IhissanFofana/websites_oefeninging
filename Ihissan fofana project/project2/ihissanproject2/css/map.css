@@ -1,0 +1,157 @@
+
+/*css voor de kleuren*/
+
+.bg-purple {
+    background-color: #6f42c1 !important; /* Bootstrap purple */
+  }
+  .bg-light-gray {
+    background-color: #f5f5f5;
+  }
+  .bg-light-blue {
+    background-color: #b3cde0;
+  }
+  .bg-lavender {
+    background-color: #e6e6fa;
+  }
+  .text-dark-purple {
+    color: #4b0082;
+  }
+  .card-smaller {
+    width: 18rem; 
+    margin: auto; /* Centraal uitlijnen */
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover; /* Beeldvullende schaal */
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .accordion {
+    background-color: #E6E6FA; /* Light purple color */
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  /*dit is css voor mijn cv*/
+
+  .marquee {
+    height: 100px; /* Beperkte hoogte */
+    padding-top: 20px; /* Ruimte boven */
+    padding-bottom: 20px; /* Ruimte onder */
+    overflow: hidden;
+    font-family: "Corben", system-ui, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+  }
+  
+  .marquee__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem; /* Ruimte tussen items */
+    min-width: 100%;
+    animation: scroll 40s linear infinite; /* Kortere animatieduur */
+  }
+  
+  .marquee__group img {
+    max-width: clamp(6rem, 1rem + 10vmin, 10rem); /* Beperkt de beeldgrootte */
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  .marquee__group p {
+    background-image: linear-gradient(
+      75deg,
+      hsl(240deg 70% 49%) 0%,
+      hsl(253deg 70% 49%) 11%,
+      hsl(267deg 70% 49%) 22%,
+      hsl(280deg 71% 48%) 33%,
+      hsl(293deg 71% 48%) 44%,
+      hsl(307deg 71% 48%) 56%,
+      hsl(320deg 71% 48%) 67%,
+      hsl(333deg 72% 48%) 78%,
+      hsl(347deg 72% 48%) 89%,
+      hsl(0deg 73% 47%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .marquee--borders {
+    border-block: 3px solid rgb(76, 57, 145);
+    padding-block: 0.75rem;
+  }
+  
+  .marquee--reverse .marquee__group {
+    animation-direction: reverse;
+    animation-delay: calc(40s / -2); /* Bijgewerkte animatieduur */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 2rem));
+    }
+  }
+  
+/*css voor ervaringen*/
+
+   .bg-purple {
+      background-color: #6f42c1 !important;
+    }
+    .text-dark-purple {
+      color: #4b0082;
+    }
+    .card-smaller {
+      width: 18rem;
+      margin: auto;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .bg-light-gray {
+        background-color: #f5f5f5;
+      }
+      .bg-light-blue {
+        background-color: #b3cde0;
+      }
+      .bg-lavender {
+        background-color: #e6e6fa;
+      }
+      /*box rond de CV*/
+      .cv-box {
+        border: 2px solid #333;     
+        padding: 20px;              
+        margin: 20px auto;          
+        max-width: 600px;           
+        background-color: #f9f9f9;   
+        border-radius: 10px;         
+    }
+    .profile-pic{
+      height: 200px;
+      width: auto;
+    }
+    /* spreek elke img aan voor dezelfde breete en hoogte*/
+.carousel-inner img {
+  height: 500px; 
+  object-fit: cover; 
+}
+
+/* Extra ruimte onderaan de accordion */
+.accordion {
+  margin-bottom: 200px;
+
+}
+.body{
+  background-color: rgb(247, 196, 227);
+}
+
+    
